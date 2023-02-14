@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="https://kit.fontawesome.com/2ad690e18a.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
     <!-- github acitivity css -->
@@ -28,7 +29,7 @@
     
 </head> 
 
-<body>
+<body class="">
     <!-- ******HEADER****** -->         
     <header class="header">
         <div class="container">                       
@@ -43,7 +44,12 @@
                                    
                 </ul> 
             </div><!--//profile-->
-            <a class="btn btn-cta-primary pull-right" download="" href="images/Gustavo Angel Lopez LopezCV.pdf" target="_blank"><i class="fa fa-paper-plane"></i> Descarga mi CV</a>              
+            <a class="btn btn-cta-primary pull-right" download="" href="images/Gustavo Angel Lopez LopezCV.pdf" target="_blank"><i class="fa fa-paper-plane"></i> Descarga mi CV</a>
+            <button class="switch pull-right" id="switch">
+                <span class="switch-icons"><i class="fa-solid fa-sun"></i></span>
+                <span class="switch-icons"><i class="fa-solid fa-moon"></i></span>
+
+            </button>              
         </div><!--//container-->
     </header><!--//header-->
     
@@ -286,5 +292,6 @@
         </div><!--//container-->
     </footer><!--//footer-->
     
+    <script src="js/main.js"></script>
 </body>
 </html> 
