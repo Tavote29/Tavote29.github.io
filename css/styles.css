@@ -6,6 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body.light{
+  background: #B3BBBE;
+  color: #565656;
+}
+
 h1,
 h2,
 h3,
@@ -42,6 +48,57 @@ a.btn {
 a.btn .fa {
   margin-right: 5px;
 }
+
+.switch{
+  background: #54ba4e;
+  border: 1px solid #54ba4e;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  margin-left: 25em;
+  margin-top: 0.5em;
+  display: flex;
+  outline: none;
+  width: 60px;
+  height: 30px;
+  
+}
+
+.switch::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: unset;
+  right: 0;
+  border-radius: 100px;
+  transition: .3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0,.2);
+}
+
+.switch.active{
+  background: #000;
+}
+
+.switch.active::after{
+  left: 0;
+  right: unset;
+}
+
+
+.switch-icons{
+  color: #fff;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: none;
+}
+
 .btn:focus,
 a.btn:focus {
   color: #fff;
@@ -114,6 +171,11 @@ iframe {
   background: #1E2021;
   border-top: 10px solid #53595D;
 }
+
+body.light .header{
+  background: #F5F5F5;
+}
+
 .header .btn {
   margin-top: 60px;
   font-weight: bold;
@@ -126,6 +188,10 @@ iframe {
   font-size: 38px;
   margin-bottom: 5px;
   margin-top: 30px;
+}
+
+body.light .profile-content .name{
+  color: #49515A;
 }
 .header .profile-content .desc {
   color: #9B9285;
@@ -170,12 +236,22 @@ iframe {
   background: #181A1B;
   padding: 30px;
 }
+
+body.light .section-inner{
+  background: #F5F5F5;
+}
+
 .section .heading {
   margin-top: 0;
   margin-bottom: 30px;
   color: #aca59a;
   font-size: 24px;
 }
+
+body.light .heading{
+  color:#545E69;
+}
+
 .section .content .more-link .fa {
   margin-right: 5px;
   font-size: 14px;
@@ -194,11 +270,13 @@ iframe {
   font-size: 12px;
 }
 .latest .item .title a {
-  color: #778492;
+  color: #54ba4e;
 }
 .latest .item .title a:hover {
   color: #5f6b77;
 }
+
+
 .latest .item .project-image:hover {
   -webkit-opacity: 0.8;
   -moz-opacity: 0.8;
