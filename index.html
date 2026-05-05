@@ -19,9 +19,7 @@
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script src="https://kit.fontawesome.com/2ad690e18a.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 
     <!-- github acitivity css -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
@@ -44,7 +42,7 @@
                                    
                 </ul> 
             </div><!--//profile-->
-            <a class="btn btn-cta-primary pull-right" download="" href="images/Gustavo Angel Lopez LopezCV.pdf" target="_blank"><i class="fa fa-paper-plane"></i> Descarga mi CV</a>
+            <a class="btn btn-cta-primary pull-right" download="" href="images/Gustavo_Lopez_Lopez_CV.pdf" target="_blank"><i class="fa fa-paper-plane"></i> Descarga mi CV</a>
             <button class="switch pull-right" id="switch">
                 <span class="switch-icons"><i class="fa-solid fa-sun"></i></span>
                 <span class="switch-icons"><i class="fa-solid fa-moon"></i></span>
@@ -89,142 +87,65 @@
                 
                 <section class="experience section">
                     <div class="section-inner">
+
                         <h2 class="heading">Experiencia Profesional</h2>
-                        <div class="content">    
-          
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" >
-                                <img class="img-responsive project-image" src="images/projects/tasf.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a >TASF S.A de C.V </a></h3>
-                                    <p class="summary"> Empresa mexicana con 10 años de experiencia. Especialistas en desarrollo de Software Financiero.
-                                    </p>
-                                   
-                                    <div class="desc text-left">                                    
-                                        <ul>
-                                            <li>Contrato de practicas(agosto 2022- enero 2023): Desarrollando una herramienta que consiste en interpretar
-                                                las tramas de buró de crédito  para el área de Soporte Técnico del departamento de Desarrollo de Software
-                                            </li>
-                                            <li>Contrato de prueba (enero- abril 2023)</li>
-                                        </ul>
-                                    </div><!--//desc--> 
-                                    
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                        </div><!--//content-->  
+                        <div class="content" id="exp-container"> </div>
+
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
     
                <section class="latest section">
                     <div class="section-inner">
                         <h2 class="heading">Proyectos</h2>
-                        <div class="content">    
-                                               
-                            <div class="item featured text-center">
-                                <h3 class="title"><a >MINECODE</a></h3>
-                                <p class="summary"> Un compilador para el lenguaje Java.
-                                </p>
-                                <div class="featured-image">                                    
-                                    <img class="img-responsive project-image" src="images/projects/Minecode.png" alt="project name" />                                    
-                                    <div class="ribbon">
-                                        <div class="text">App</div>
-                                        </div>
-                                    </div>
-                                    
-                                <div class="desc text-left">                                    
-                                    <p>Un programa diseñado en C# con la librería Irony hecho para el lenguaje
-                                        Java y muestre los analizadores léxico, sintáctico y semántico.
-                                        El léxico muestra los símbolos y palabras reservadas, mientras que el sintactico analiza si la estructura
-                                        del código está bien y el semántico busca posibles errores en la ejecucion del programa.
-                                    </p>
-                                </div><!--//desc-->         
-                                              
-                            </div><!--//item-->
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" >
-                                <img class="logotrraid" src="images/projects/trraid.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a >Trraid - Una aplicación de entrega a domicilio</a></h3>
-                                    <p>Una aplicacion de entrega a domicilio desarrollado con la plataforma de desarrollo Firebase</p>
-                                    
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
                             
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12">
-                                <img class="img-responsive project-image" src="images/projects/portfolio.PNG" alt="project name" />
+                            <!--Carrusel-->
+                            <div id="carrusel" class="carousel slide" data-ride="carousel">
+
+                                <div class="carousel-indicators"></div>
+                                
+                                <div class="carousel-inner" id="carousel_elements"></div>
+
+                                <!--Controles-->
+                                <a class="left carousel-control" href="#carrusel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
                                 </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a >Mi portfolio</a></h3>
-                                    <p>Mi propia página web donde muestro mi CV, softskills y habilidades</p>                                    
-                                    
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                    
-                        </div><!--//content-->  
+
+                                <a class="right carousel-control" href="#carrusel" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+
+                            </div>
+                    </div><!--//section inner-->  
+
                     </div><!--//section-inner-->                 
                 </section><!--//section-->     
-            </div><!--//primary-->
+            
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
                  <aside class="info aside section">
                     <div class="section-inner">
                         <h2 class="heading sr-only">Información</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Ubicación:</span>El Mante, Tamaulipas, Mex</li>
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Ubicación:</span>México</li>
                                 <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">gustavo_angel2000@hotmail.com</a></li>
                                 <li><i class="fa fa-phone"></i><span class="sr-only">Teléfono:</span>831 155 6843 </li>
                             </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
+                        </div>
+                    </div>            
+                </aside>
                 
                 <aside class="skills aside section">
                     <div class="section-inner">
                         <h2 class="heading">Lenguajes y Tecnologías</h2>
                         <div class="content">
                             
-                            <div class="skillset">
+                            <div class="skillset" id="technologic-stack"></div>
                                
-                                <div class="item">
-                                    <h3 class="level-title">PHP &amp; Laravel<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info..."></span></h3>
-                                <img class = "logos" src="images/logos/php.png" alt="php">
-                                <img class = "logos" src="images/logos/laravel.png" alt="laravel">
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Java <span class="level-label"></span></h3>
-                                               <img class="logos" src="images/logos/java.png" alt="java">                    
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">MySQL &amp; SQLServer<span class="level-label"></span></h3>
-                                        <img class="logos" src="images/logos/mysql.png" alt="mysql"> 
-                                        <img class="logos" src="images/logos/sqlserver.png" alt="sqlserver">                        
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, JavaScript<span class="level-label"></span></h3>
-                                    <img class="logos" src="images/logos/html.png" alt="html">
-                                    <img class="logos" src="images/logos/css.png" alt="css">
-                                    <img class="logos" src="images/logos/logo-javascript.png" alt="javascript">                       
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">C# <span class="level-label"></span></h3>
-                                    <img class = "logos" src="images/logos/csharp.png" alt="csharp">                               
-                                </div><!--//item-->
-                                
-                                
                             </div>              
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
+                        </div>
+                                    
+                </aside>
                 
-               
                 
                 <aside class="education aside section">
                     <div class="section-inner">
@@ -276,10 +197,7 @@
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                
-              
+                </aside><!--//section-->    
             </div><!--//secondary-->    
         </div><!--//row-->
     </div><!--//masonry-->
@@ -292,6 +210,9 @@
         </div><!--//container-->
     </footer><!--//footer-->
     
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/datos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html> 

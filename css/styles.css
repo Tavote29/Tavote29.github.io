@@ -49,6 +49,31 @@ a.btn .fa {
   margin-right: 5px;
 }
 
+.carousel-indicators li {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.4);
+  border: none;
+  margin: 0 6px;
+  opacity: 1;
+}
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-indicators .active {
+  background-color: #ffffff;
+  margin: 0 6px;
+}
+
+body.light .carousel-indicators li {
+  background-color: rgba(0,0,0,0.3);
+}
+body.light carousel-indicators .active{
+  background-color: #000000;
+}
+
 .switch{
   background: #54ba4e;
   border: 1px solid #54ba4e;
@@ -350,6 +375,14 @@ body.light .heading{
 .latest .featured-image .ribbon .text:after {
   right: 0;
 }
+
+.logos {
+  width: 75px;
+  height: 75px;
+  object-fit: contain; 
+  margin-right: 10px;
+}
+
 /* Projects Section */
 .projects .item {
   margin-bottom: 30px;
