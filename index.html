@@ -5,7 +5,7 @@
 <head>
     <title>Portfolio Gustavo Lopez Lopez</title>
     <!-- Meta -->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Responsive HTML5 Website landing Page for Developers">
@@ -34,20 +34,33 @@
             <img class="profile-image img-responsive pull-left" src="images/tavote2.png" alt="Gustavo Angel López López" />
             <div class="profile-content pull-left">
                 <h1 class="name">Gustavo Angel López López</h1>
-                <h2 class="desc">Desarrollador Backend Junior</h2>   
+                <h2 class="desc" data-translate="title">Desarrollador Backend</h2>   
                 <ul class="social list-inline">
                     <li><a href="https://www.facebook.com/gustavoangel.lopezlopez"><i class="fa fa-facebook"></i></a></li>                   
                     <li><a href="https://www.linkedin.com/in/gustavo-lopez-lopez/"><i class="fa fa-linkedin"></i></a></li>
                     <li><a href="https://github.com/Tavote29"><i class="fa fa-github-alt"></i></a></li>                  
                                    
-                </ul> 
+                </ul>
+                
+                <div class="btn-group pull-left">
+                    <button class="btn btn-default" onclick="changeLanguage('es')">
+                        <i class="fa fa-language"></i>
+                        ES
+                    </button>
+                    <button class="btn btn-default" onclick="changeLanguage('en')">
+                        <i class="fa fa-language"></i>
+                        EN
+                    </button>
+                </div>    
             </div><!--//profile-->
             <a class="btn btn-cta-primary pull-right" download="" href="images/Gustavo_Lopez_Lopez_CV.pdf" target="_blank"><i class="fa fa-paper-plane"></i> Descarga mi CV</a>
             <button class="switch pull-right" id="switch">
                 <span class="switch-icons"><i class="fa-solid fa-sun"></i></span>
                 <span class="switch-icons"><i class="fa-solid fa-moon"></i></span>
-
-            </button>              
+            </button>
+            
+            
+           
         </div><!--//container-->
     </header><!--//header-->
     
@@ -56,9 +69,9 @@
             <div class="primary col-md-8 col-sm-12 col-xs-12">
                 <section class="about section">
                     <div class="section-inner">
-                        <h2 class="heading">Sobre mi</h2>
+                        <h2 class="heading" data-translate="about_me">Sobre mi</h2>
                         <div class="content">
-                            <p class = "descriptionAboutMe">Tengo mucha motivación para seguir perfeccionando habilidades y crecer profesionalmente. Soy una persona proactiva y autodidacta que 
+                            <p class = "descriptionAboutMe" data-translate="profile_description">Tengo mucha motivación para seguir perfeccionando habilidades y crecer profesionalmente. Soy una persona proactiva y autodidacta que 
                                 constantemente aprende algo nuevo para aportar con mi equipo.
                                 Me entusiasma el desarrollo backend, bases de datos y me fascina la ciencia de datos y todo lo que tenga que ver en ello.
                             </p>    
@@ -73,12 +86,11 @@
                         <h2 class="heading">Softskills</h2>
                         <div class="content">
                             <ul>
-                                <li>Perseverante</li>
-                                <li>Autodidacta</li>
-                                <li>Proactivo</li>
-                                <li>Activo</li>
-                                <li>Trabajo en equipo</li>
-                                <li>Autocrítico</li>
+                                <li data-translate="persistent">Perseverante</li>
+                                <li data-translate="self_taught">Autodidacta</li>
+                                <li data-translate="proactive"="">Proactivo</li>
+                                <li data-translate="cooperative">Trabajo en equipo</li>
+                                <li data-translate="autocritic">Autocrítico</li>
                             </ul>
                             
                         </div><!--//content-->  
@@ -88,7 +100,7 @@
                 <section class="experience section">
                     <div class="section-inner">
 
-                        <h2 class="heading">Experiencia Profesional</h2>
+                        <h2 class="heading" data-translate="expertise">Experiencia Profesional</h2>
                         <div class="content" id="exp-container"> </div>
 
                     </div><!--//section-inner-->                 
@@ -96,7 +108,7 @@
     
                <section class="latest section">
                     <div class="section-inner">
-                        <h2 class="heading">Proyectos</h2>
+                        <h2 class="heading" data-translate="projects">Proyectos</h2>
                             
                             <!--Carrusel-->
                             <div id="carrusel" class="carousel slide" data-ride="carousel">
@@ -123,12 +135,22 @@
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
                  <aside class="info aside section">
                     <div class="section-inner">
-                        <h2 class="heading sr-only">Información</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Ubicación:</span>México</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">gustavo_angel2000@hotmail.com</a></li>
-                                <li><i class="fa fa-phone"></i><span class="sr-only">Teléfono:</span>831 155 6843 </li>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    <span data-translate="mexico">
+                                        México
+                                    </span>
+                                    </li>
+                                <li>
+                                    <i class="fa fa-envelope-o"></i>
+                                    <a href="#">gustavo_angel2000@hotmail.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    831 155 6843 
+                                </li>
                             </ul>
                         </div>
                     </div>            
@@ -136,7 +158,7 @@
                 
                 <aside class="skills aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Lenguajes y Tecnologías</h2>
+                        <h2 class="heading" data-translate="technologies">Lenguajes y Tecnologías</h2>
                         <div class="content">
                             
                             <div class="skillset" id="technologic-stack"></div>
@@ -149,14 +171,24 @@
                 
                 <aside class="education aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Educación</h2>
+                        <h2 class="heading" data-translate="education">Educación</h2>
                         <div class="content">
                             <div class="item">                      
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> Ingeniería en Sistemas computacionales</h3>
+                                <h3 class="title">
+                                    <i class="fa fa-graduation-cap"></i> 
+                                    <span data-translate="engineering">
+                                        Ingeniería en Sistemas computacionales
+                                    </span>
+                                </h3>
                                 <h4 class="university">Instituto Tecnológico Superior de El Mante <span class="year">(2018-2023)</span></h4>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> Técnico en Soporte y Mantenimiento de Equipo de Computo</h3>
+                                <h3 class="title">
+                                    <i class="fa fa-graduation-cap"></i> 
+                                    <span data-translate="technician">
+                                        Técnico en Soporte y Mantenimiento de Equipo de Computo
+                                    </span>
+                                </h3>
                                 <h4 class="university">Centro de Bachillerato Tecnológico Industrial y de Servicios <span class="year">(2015-2018)</span></h4>
                             </div><!--//item-->
                         </div><!--//content-->
@@ -165,17 +197,17 @@
                             
                 <aside class="languages aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Idiomas</h2>
+                        <h2 class="heading" data-translate="languages">Idiomas</h2>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li class="item">
-                                    <span class="title"><strong>Español:</strong></span>
-                                    <span class="level">Idioma Nativo </span>
+                                    <span class="title" data-translate="spanish"><strong>Español:</strong></span>
+                                    <span class="level" data-translate="spanish_level">Idioma Nativo </span>
                                 </li><!--//item-->
                                
                                 <li class="item">
-                                    <span class="title"><strong>Inglés:</strong></span>
-                                    <span class="level">Intermedio </span>
+                                    <span class="title" data-translate="english"><strong>Inglés:</strong></span>
+                                    <span class="level" data-translate="english_level">Intermedio </span>
                                 </li><!--//item-->
                             </ul>
                         </div><!--//content-->
@@ -187,7 +219,7 @@
                 
                 <aside class="list conferences aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Concursos</h2>
+                        <h2 class="heading" data-translate="competitions">Concursos</h2>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-calendar"></i> <a href="" target="_blank">Coding Cup (2021,2020,2019)</a></li>
